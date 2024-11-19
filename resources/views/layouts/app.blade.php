@@ -54,14 +54,19 @@
     </header>
 
     <main class="main">
-        <!-- Starter Section Section -->
-        <section id="starter-section" class="starter-section section">
-
-            <!-- Section Title -->
-            <div class="container section-title" data-aos="fade-up">
-                @yield('title-page')
-            </div><!-- End Section Title -->
-        </section><!-- /Starter Section Section -->
+        <!-- Page Title -->
+        <div class="page-title" data-aos="fade" style="background-image: url('{{asset("assets/img/page-title-bg.webp")}}');">
+            <div class="container position-relative">
+                <h1>@yield('title-page')</h1>
+                <!-- <p>Esse dolorum voluptatum ullam est sint nemo et est ipsa porro placeat quibusdam quia assumenda numquam molestias.</p> -->
+                <nav class="breadcrumbs">
+                    <ol>
+                        <li><a href="/">Inicio</a></li>
+                        <li class="current">Registro de usuario</li>
+                    </ol>
+                </nav>
+            </div>
+        </div><!-- End Page Title -->
 
         <section class="container"> @yield('content') </section>
 
@@ -93,40 +98,6 @@
                             <li><a href="#">Terms of service</a></li>
                             <li><a href="#">Privacy policy</a></li>
                         </ul>
-                    </div>
-
-                    <div class="col-lg-2 col-md-3 footer-links">
-                        <h4>Our Services</h4>
-                        <ul>
-                            <li><a href="#">Web Design</a></li>
-                            <li><a href="#">Web Development</a></li>
-                            <li><a href="#">Product Management</a></li>
-                            <li><a href="#">Marketing</a></li>
-                            <li><a href="#">Graphic Design</a></li>
-                        </ul>
-                    </div>
-
-                    <div class="col-lg-2 col-md-3 footer-links">
-                        <h4>Hic solutasetp</h4>
-                        <ul>
-                            <li><a href="#">Molestiae accusamus iure</a></li>
-                            <li><a href="#">Excepturi dignissimos</a></li>
-                            <li><a href="#">Suscipit distinctio</a></li>
-                            <li><a href="#">Dilecta</a></li>
-                            <li><a href="#">Sit quas consectetur</a></li>
-                        </ul>
-                    </div>
-
-                    <div class="col-lg-2 col-md-3 footer-links">
-                        <h4>Nobis illum</h4>
-                        <ul>
-                            <li><a href="#">Ipsam</a></li>
-                            <li><a href="#">Laudantium dolorum</a></li>
-                            <li><a href="#">Dinera</a></li>
-                            <li><a href="#">Trodelas</a></li>
-                            <li><a href="#">Flexo</a></li>
-                        </ul>
-                    </div>
 
                 </div>
             </div>

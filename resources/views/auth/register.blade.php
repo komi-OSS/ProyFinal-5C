@@ -5,13 +5,10 @@
 @section('nav')
 <nav id="navmenu" class="navmenu">
     <ul>
-        <li><a href="/" class="active">Inicio<br></a></li>
+        <li><a href="/">Inicio<br></a></li>
         <!-- <li><a href="#speakers">Speakers</a></li> -->
-        <li><a href="#catalogo">Catálogo</a></li>
-        <li><a href="#cbtis">CBTis</a></li>
-        <li><a href="#recomendados">Recomendado</a></li>
-        <li><a href="#gallery">Iniciar sesión</a></li>
-        <li><a href=" {{route('usuarios.create')}} ">Registrarse</a></li>
+        <li><a href="">Iniciar sesión</a></li>
+        <li><a href=" {{route('usuarios.create')}} " class="active">Registrarse</a></li>
     </ul>
     <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
 </nav>
@@ -101,6 +98,7 @@
             </span>
             @enderror
         </div>
+
 
         <div class="form-group">
             <label for="tipo_usuario">Tipo de Usuario</label>
